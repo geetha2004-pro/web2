@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling</title>
+</head>
+<style>
+    div {
+        border: 10px solid violet;
+        margin: 10px;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <div id="sangeetha">
+        Sangeetha
+        <div id="sunitha">
+            Sunitha
+            <div id="eragamma">
+                Eragamma
+                <div id="ashok">
+                    Ashok
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        /////////////it displayed bottom to top
+        //  document.getElementById('sangeetha').addEventListener('click', function () {
+        //     alert('Iam sangeetha')
+            
+        // })
+        // document.getElementById('sunitha').addEventListener('click', function () {
+        //     alert('Iam sunitha')
+            
+        // })
+        // document.getElementById('eragamma').addEventListener('click', function () {
+        //     alert('Iam eragamma')
+        
+        // })
+        // document.getElementById('ashok').addEventListener('click', function () {
+        //     alert('Iam ashok')
+            
+        // })
+
+
+
+
+/////////////////////////it displayed onlt perticular name
+
+
+        // document.getElementById('sangeetha').addEventListener('click', function (geetha) {
+        //     alert('Iam sangeetha')
+        //     geetha.stopPropagation();
+        // },true)
+        // document.getElementById('sunitha').addEventListener('click', function (suni) {
+        //     alert('Iam sunitha')
+        //     suni.stopPropagation()
+        // },true)
+        // document.getElementById('eragamma').addEventListener('click', function (ergm) {
+        //     alert('Iam eragamma')
+        //     ergm.stopPropagation()
+        // },true)
+        // document.getElementById('ashok').addEventListener('click', function (ask) {
+        //     alert('Iam ashok')
+        //     ask.stopPropagation();  
+        // },true)
+
+
+
+
+        document.getElementById('sangeetha').addEventListener('click', function () {
+            alert('Iam sangeetha')
+            
+        },true)
+        document.getElementById('sunitha').addEventListener('click', function () {
+            alert('Iam sunitha')
+            
+        },true)
+        document.getElementById('eragamma').addEventListener('click', function () {
+            alert('Iam eragamma')
+        
+        },true)
+        document.getElementById('ashok').addEventListener('click', function () {
+            alert('Iam ashok')
+            
+        },true)
+       
+
+
+    </script>
+</body>
+
+</html>
